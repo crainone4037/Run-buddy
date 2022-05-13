@@ -129,39 +129,62 @@
         </div>
 
 
-         <p>your already here, so why not? </p>
+         
      </div>
-     <div>
-         <img src ="./assets/images/step-2.svg"alt ="" />
-         <h3>Step 2: <span>Consult with one of our trainers.</span> </h3>
-         <p> are you here to build muscle,lose weight, or just feel good? </p>
+     <div class = "step">
+        <h3>Step 2:Consult with one of our trainers </h3>
+        <div class = "step-info">
+            <div class = "step-img">
+                <img src ="./assets/images/step-2.svg"alt ="" />
+            </div>
+            <div class = "step-text">
+                <h4> Are You Here To Build Muscle,Lose Weight, or Just Feel Good? </h4>
+
+            </div>
+        </div>
      </div>
-     <div>
+
+
+         
+     <div class = "step">
+         <h3> Step 3: Get Running</h3>
+       <div class = "step-info">
+         <div class = "step-img">
         <img src = "./assets/images/step-3.svg"alt = "" /> 
-        <h3>Step 3:<span>Get Running</span></h3>
-        <p> Hit the ground running(literally) once your trainer lays out your plan.</p>
-
+         </div>
+         <div class = "step-text">
+             <h4> Hit the grounf running (literally) one your trainer lays out your plan.</h4>
+         </div>
+       </div>
     </div>
-    <div>
+    <div class = "step">
+        <h3> Step 4.</h3>
+        <div class = "step-info">
+            <div class ="step-img">
         <img src ="./assets/images/step-4.svg"alit ="" /> 
-
-        <h3>Step 4: <span>See Results</span></h3>
-        <p>Bi-weekly checkins with your trainer will keep you focused.</p>
+            </div>
+            <div class = "step-text">
+                <h4>See Results</h4>
+                <p>Bi-weekly checkins with your trainer will keep you focused.</p>
+            </div>
+         </div>
     </div>
 </section>
 
-
- <section id ="your-trainers" class = "trainers">
+<!--meet the trainers-->
+ <section id ="your-trainers" >
+    <div class = "flex-row">
+        <h2 class = "section-title primary-border"> Meet The Trainers </h2>
+           </div>
 
 <!--First Trainer Bio-->
-         <div class = "flex-row">
-      <h2 class = "section-title primary-border"> Meet The Trainers </h2>
-         </div>
+<div class = "trainers">
+       
     <article class = "trainer"> 
         <img src = " ./assets/images/trainer-1.jpg" alt = "Arron Stephens in his workout cloths,ready to pump iron" /> 
-        <div class =" trainer-bio text-left"> 
-            <h3> Arron Stephens</h3>
-            <h4> Speed/ Strength</h4>
+        <div class =" trainer-bio"> 
+            <h3 class = "trainer-name"> Arron Stephens</h3>
+            <h4 class = "trainer-role"> Speed/ Strength</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
                 itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
               </p>
@@ -185,15 +208,17 @@
 
     <article class = "trainer"> 
         <img src = "./assets/images/trainer-3.jpg" alt = " Harry lifting commically small weights." />
-            <div class = "trainer-bio text-left">
-                <h3>Harry "the Head Band" Smith</h3>
-                <h4>Strength </h4>
+            <div class = "trainer-bio">
+                <h3 class = "trainer-name">Harry "the Head Band" Smith</h3>
+                <h4 class = "trainer-role">Strength </h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
                     itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
                 </p>
                 
             </div>
         </article>
+
+</div>
 
 </section>
 
@@ -206,34 +231,24 @@
      <!--reach out-->
 
 
- <section id ="reach-out"class ="contact">
-
-   <div class ="flex-row">
-   <h2 class = "section-title primary-border">Reach Out</h2>
-   </div>
-   <div class = " contact-info" >
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12135.371671417915!2d-74.45617216662733!3d40.500856486086256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c65518be06bf%3A0x51b42066917aaf48!2sRutgers%E2%80%93New%20Brunswick!5e0!3m2!1sen!2sus!4v1651854675983!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     <div class ="contact-form">
-         <h3> Contact Us</h3>
-             <form> 
-                 <label for ="conact-name"> Your Name </label>
-                 <input type = "text" id = "contact-name" placeholder="Your Name" />
-
-                 <label for = "contact-message">Message</label>
-                 <textarea  id = "contact-message"  placeholder="Message"></textarea>
-                 <button type = "submit">submit </button>
-             </form>
-            </div>
-
-                 
+     <section id="reach-out" class="contact">
+        <div class="flex-row">
+          <h2 class="section-title secondary-border">
+            Reach Out
+          </h2>
+        </div>
+  
+        <div class="contact-info">
+          <div>
+            <h3>Run Buddy</h3>
+            <p>
+              Any questions or concerns before signing up? 
+              <br/>
+              Let us know and we'll be happy to talk to you!
+            </p>
+  
          
-    <div>
 
-     <p> Any questions or concerns before signing up?
-         <br />
-         Let us know and well be happy to talk to you.
-
-     </p>
      <address>
          55 Main Street <br/>
          Rutgers,NJ <br/>
@@ -243,6 +258,20 @@
 
      </address>
      </div>
+     <div class ="contact-form">
+        <h3> Contact Us</h3>
+            <form> 
+                <label for ="conact-name"> Your Name </label>
+                <input type = "text" id = "contact-name" placeholder="Your Name" />
+
+                <label for = "contact-message">Message</label>
+                <textarea  id = "contact-message"  placeholder="Message"></textarea>
+                <button type = "submit">submit </button>
+            </form>
+           </div>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12135.371671417915!2d-74.45617216662733!3d40.500856486086256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c65518be06bf%3A0x51b42066917aaf48!2sRutgers%E2%80%93New%20Brunswick!5e0!3m2!1sen!2sus!4v1651854675983!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
    </div>
 
  </section>    
